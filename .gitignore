@@ -1,0 +1,33 @@
+## IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+
+## Java
+# Compiled class file
+*.class
+
+## Log file
+*.log
+
+## Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+## Java-Web
+## ignoring target file
+target/
+
+## Properties
+src/main/resources/META-INF/database/db.properties
+
+## Maven
+.mvn/*
+mvnw
+mvnw.cmd
