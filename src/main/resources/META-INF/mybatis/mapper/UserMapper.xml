@@ -3,10 +3,16 @@
 
 <mapper namespace="goodgid.odot.repository.oltp.UserMapper">
 
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultType="User">
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultType="UserDao">
 		select *
 		from user
 		where user_seq = #{userSequence,jdbcType=DECIMAL}
+	</select>
+
+	<select id="selectByName" parameterType="java.lang.String" resultType="UserDao">
+		select *
+		from user
+		where name = #{name,jdbcType=VARCHAR}
 	</select>
 
 </mapper>

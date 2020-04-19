@@ -1,8 +1,10 @@
 package goodgid.odot.repository.oltp;
 
-import goodgid.odot.model.User;
+import goodgid.odot.model.dao.UserDao;
 
 public interface UserMapper {
 
-    User selectByPrimaryKey(Long userSequence);
+    UserDao selectByPrimaryKey(Long userSequence);
+
+    UserDao selectByName(String name);
 }

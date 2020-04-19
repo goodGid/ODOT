@@ -1,4 +1,4 @@
-package goodgid.odot.model;
+package goodgid.odot.model.dao;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -7,9 +7,9 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class User {
+public class UserDao {
 
-    private int user_seq;
+    private Long user_seq;
 
     private String name;
 }
