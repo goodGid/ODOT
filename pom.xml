@@ -23,9 +23,9 @@
     <org.springframework.version>4.3.11.RELEASE</org.springframework.version>
 
     <!-- Persistence -->
-    <mybatis.spring.version>1.2.1</mybatis.spring.version>
+    <mybatis.spring.version>2.0.4</mybatis.spring.version>
     <mysql.version>5.1.33</mysql.version>
-    <mybatis.version>3.3.0</mybatis.version>
+    <mybatis.version>3.5.0</mybatis.version>
   </properties>
 
   <dependencies>
@@ -81,13 +81,6 @@
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>5.1.31</version>
-    </dependency>
-
-    <!-- Lombok -->
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <optional>true</optional>
     </dependency>
 
     <!--Spring Transaction -->
