@@ -119,3 +119,27 @@ java -jar odot-0.0.1-SNAPSHOT.jar
     - port : 8080
     
     - ex) http://13.124.47.92:8080/health/check
+
+
+### Step 4.
+
+* Set it to run in the background using the `nohup` and `&` command.
+
+```
+nohup java -jar target/odot-0.0.1-SNAPSHOT.jar&
+```
+
+* If you want to terminate the server, Find and kill
+
+```
+# Find Server Process
+## Usage 1. 
+ps -ef | grep '{project_name}'
+ex) ps -ef | grep 'odot'
+
+## Usage 2. 
+ps -ef | grep 'java -jar'
+
+# Kill Process
+kill -9 pid
+```
