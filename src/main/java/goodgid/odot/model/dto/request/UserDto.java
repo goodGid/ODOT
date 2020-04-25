@@ -10,4 +10,7 @@ import lombok.Setter;
 public class UserDto {
 
     private String name;
+
+    private String nick_name;
+
 }

@@ -6,5 +6,5 @@ public interface UserMapper {
 
     UserDao selectByPrimaryKey(Long userSequence);
 
-    UserDao selectByName(String name);
+    UserDao selectByName(String name, String nickName);
 }

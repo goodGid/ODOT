@@ -22,7 +22,7 @@ public class UserConverter {
         @Override
         public UserDto convert(String name) {
             UserDto userDto = new UserDto();
-            UserDao userDao = userMapper.selectByName(name);
+            UserDao userDao = userMapper.selectByName(name, name);
             try {
                 BeanUtils.copyProperties(userDao, userDto);
             } catch (Exception e) {

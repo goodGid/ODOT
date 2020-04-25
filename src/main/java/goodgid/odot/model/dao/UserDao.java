@@ -12,4 +12,6 @@ public class UserDao {
     private Long user_seq;
 
     private String name;
+
+    private String nick_name;
 }
