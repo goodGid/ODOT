@@ -10,6 +10,8 @@ import java.io.IOException;
 import javax.sql.DataSource;
 
 import org.apache.commons.dbcp2.BasicDataSource;
+import org.apache.commons.lang.ArrayUtils;
+import org.apache.ibatis.plugin.Interceptor;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.ApplicationContext;
@@ -57,6 +59,10 @@ public class DatabaseConfig implements EnvironmentAware {
         factoryBean.setMapperLocations(
                 applicationContext.getResources("classpath:META-INF/mybatis/mapper/*.xml"));
         factoryBean.setTypeAliasesPackage("goodgid.odot.model");
+
+        Interceptor plugin = (Interceptor) applicationContext.getBean("sqlQueryLogInterceptor");
+        factoryBean.setPlugins((Interceptor[]) ArrayUtils.add(null, plugin));
+
         return factoryBean;
     }
 

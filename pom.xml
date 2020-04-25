@@ -26,6 +26,12 @@
     <mybatis.spring.version>2.0.4</mybatis.spring.version>
     <mysql.version>5.1.33</mysql.version>
     <mybatis.version>3.5.0</mybatis.version>
+
+    <!-- commons-lang -->
+    <commons-lang.version>2.6</commons-lang.version>
+
+    <!-- com.google.guava -->
+    <guava.version>20.0</guava.version>
   </properties>
 
   <dependencies>
@@ -96,6 +102,20 @@
       <artifactId>spring-jdbc</artifactId>
       <version>${org.springframework.version}</version>
     </dependency>
+
+    <!-- Apache common lang -->
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+      <version>${commons-lang.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>${guava.version}</version>
+    </dependency>
+
 
   </dependencies>
 
