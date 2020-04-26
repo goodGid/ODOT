@@ -6,7 +6,7 @@
 
 ## OS
 
-* Ubuntu 18.04.3 LTS by AWS RDS
+* Ubuntu 18.04.3
 
 ---
 
@@ -143,3 +143,13 @@ ps -ef | grep 'java -jar'
 # Kill Process
 kill -9 pid
 ```
+
+---
+
+## Tip
+
+* [Alias Setting for server management](https://gist.github.com/goodGid/1710d1542368ebf637b315882bc419d2)
+
+* [Setting Nginx](https://goodgid.github.io/Nginx/)
+
+* [If you want to use Domain Name](https://goodgid.github.io/Free-Domain/)
