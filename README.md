@@ -1,6 +1,6 @@
-## ODOT : One Day One Tip 
+## ODOT
 
-* Provide one tip per day
+* Project Summary : [One Day One Tip](https://github.com/goodGid/ODOT/wiki/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%86%8C%EA%B0%9C)
 
 ---
 
