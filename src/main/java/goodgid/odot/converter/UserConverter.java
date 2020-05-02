@@ -1,7 +1,9 @@
 package goodgid.odot.converter;
 
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
@@ -19,8 +21,15 @@ public class UserConverter {
         @Autowired
         private UserMapper userMapper;
 
+        @Value("${author:'goodgid'}")
+        private String default_name;
+
         @Override
         public UserDto convert(String name) {
+            if (StringUtils.isBlank(name)) {
+                name = default_name;
+            }
+
             UserDto userDto = new UserDto();
             UserDao userDao = userMapper.selectByName(name, name);
             try {
